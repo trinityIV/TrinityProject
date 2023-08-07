@@ -13,6 +13,8 @@ var speed = DEFAULT_SPEED;
 var targetSpeed = DEFAULT_SPEED;
 var particles = [];
 
+
+//init canvas and particles on window load event 
 window.addEventListener('load', function() {
     canvas = document.getElementById('c');
     
