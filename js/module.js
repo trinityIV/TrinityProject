@@ -18,6 +18,7 @@ var particles = [];
 window.addEventListener('load', function() {
     canvas = document.getElementById('c');
     
+
     var resize = function() {
         canvasWidth  = canvas.width = window.innerWidth;
         canvasHeight = canvas.height = window.innerHeight;
@@ -50,10 +51,11 @@ window.addEventListener('load', function() {
     document.addEventListener('mouseup', function(d) {
         targetSpeed = DEFAULT_SPEED;
     }, false);
+
     
     setInterval(loop, 1000 / 60);
 }, false);
-
+ 
 function loop() {
     context.save();
     context.fillStyle = 'rgb(0, 0, 0)';
@@ -122,7 +124,6 @@ function randomizeParticle(p) {
     return p;
 }
 
-
 /**
  * Particle
  */
@@ -131,4 +132,17 @@ function Particle(x, y, z) {
     this.y = y || 0;
     this.z = z || 0;
     this.pastZ = 0;
+}
+
+function copyImageToCanvas() {
+    var image = document.querySelector("img");
+    var canvas = document.querySelector("canvas");
+    
+    var ctx = canvas.getContext("2d");
+    
+    //3 arg verison
+    ctx.drawImage( image, 0, 0, );
+    
+
+
 }
