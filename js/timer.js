@@ -1,4 +1,3 @@
-
 var $progress = $(".progress"),
     $bar = $(".progress__bar"),
     $text = $(".progress__text"),
@@ -27,7 +26,7 @@ resetColors = function() {
 update = function() {
   
   timer = setTimeout( function() {
-
+   /*
     percent += Math.random() * 1.8;
     percent = parseFloat( percent.toFixed(1) );
     
@@ -58,8 +57,11 @@ update = function() {
       update();
 
     }
+*/
 
-    $bar.css({ width: percent + "%" });
+
+  $bar.css({ width: percent + "%" });
+
 
   }, speed);
   
@@ -68,11 +70,11 @@ update = function() {
 setTimeout( function() {
   
   $progress.addClass("progress--active");
-  update();
+
   
 },1000);
 
-
+/*
 $(document).on("click",  function(e) {
   
   percent = 0;
@@ -81,3 +83,4 @@ $(document).on("click",  function(e) {
   update();
   
 });
+*/
