@@ -25,7 +25,7 @@ function blackhole(element) {
 	context.globalCompositeOperation = "multiply";
 
 	//autoplay audio on page load
-	var audio = new Audio('audio/Space.mp3');
+	var audio = new Audio('audio/Medieval.mp3');
 	audio.loop = true;
 	
 	function setDPI(canvas, dpi) {
@@ -198,7 +198,7 @@ function blackhole(element) {
 	function openpage(){
 		//sleep for 5 seconds
 		setTimeout(function(){
-			window.location.href = 'Menu.html';
+			window.location.href = '#';
 		}, 2500);
 	}
 
